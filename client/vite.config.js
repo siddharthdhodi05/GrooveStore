@@ -8,4 +8,9 @@ export default defineConfig({
   server: {
     port: 3002,
   },
+  resolve: {
+    alias: {
+      "@components": "/src/components",
+    },
+  },
 });

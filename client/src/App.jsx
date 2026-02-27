@@ -1,9 +1,13 @@
+import Footer from "@components/Footer";
+import Header from "@components/Header";
 import React from "react";
 
 const App = () => {
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="flex min-h-screen flex-col bg-slate-200">
+      <Header />
+      <div className="grow"></div>
+      <Footer />
     </div>
   );
 };

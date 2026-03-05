@@ -3,6 +3,7 @@ import products from "@data/products";
 import React from "react";
 
 const Home = () => {
+  console.log(window.location.pathname);
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-3 py-10 sm:px-6 lg:px-8">

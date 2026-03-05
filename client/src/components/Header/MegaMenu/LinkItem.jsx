@@ -4,7 +4,7 @@ const LinkItem = ({ url, label }) => {
   return (
     <li>
       <Link
-        href={url}
+        to={url}
         className="text-sm text-slate-700 transition-all hover:text-slate-950 hover:underline"
       >
         {label}

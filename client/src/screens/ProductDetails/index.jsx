@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { Link, useParams } from "react-router-dom";
 
 import Rating from "@components/ProductCard/Rating";
-import products from "@data/products";
+import products from "../../../../server/data/products";
 import QuantitySelector from "./QuantitySelector";
 
 const ProductDetailsScreen = () => {

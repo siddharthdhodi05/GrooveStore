@@ -1,5 +1,5 @@
 import ProductCard from "@components/ProductCard";
-import products from "@data/products";
+import products from "../../../../server/data/products";
 import React from "react";
 
 const Home = () => {

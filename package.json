@@ -12,7 +12,7 @@
   },
   "license": "ISC",
   "author": "Siddharth",
-  "type": "commonjs",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "node server/main.js",
@@ -21,6 +21,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    "dotenv": "^17.3.1",
     "express": "^5.2.1"
   },
   "devDependencies": {

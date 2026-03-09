@@ -1,13 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
 
-import products from "#data/products.js";
+import products from "#data/products.data.js";
 import connectDB from "#config/db.config.js";
 import morgan from "morgan";
 
 dotenv.config();
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5000;
 
 connectDB();
 

@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 
 import products from "#data/products.js";
 import connectDB from "#config/db.config.js";
+import morgan from "morgan";
 
 dotenv.config();
 
@@ -11,6 +12,8 @@ const port = process.env.PORT || 5001;
 connectDB();
 
 const app = express();
+
+app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
   res.send("API is running");

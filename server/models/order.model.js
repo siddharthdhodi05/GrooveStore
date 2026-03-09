@@ -1,4 +1,3 @@
-import products from "#data/products.js";
 import mongoose, { Collection } from "mongoose";
 
 const orderSchema = mongoose.Schema(

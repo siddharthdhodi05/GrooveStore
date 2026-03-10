@@ -1,9 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
+import colors from "colors";
+import morgan from "morgan";
 
 import products from "#data/products.data.js";
 import connectDB from "#config/db.config.js";
-import morgan from "morgan";
 
 dotenv.config();
 
@@ -29,5 +30,7 @@ app.get("/api/v1/products/:id", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`server is running in ${process.env.NODE_ENV} mode on ${port}`);
+  console.log(
+    `server is running in ${process.env.NODE_ENV} mode on ${port}`.yellow.bold,
+  );
 });

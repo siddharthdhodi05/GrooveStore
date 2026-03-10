@@ -1,4 +1,4 @@
-import mongoose, { Collection } from "mongoose";
+import mongoose from "mongoose";
 
 const reviewSchema = mongoose.Schema(
   {
@@ -79,7 +79,7 @@ const productSchema = mongoose.Schema(
     reviews: [reviewSchema],
   },
   {
-    timestamp: true,
+    timestamps: true,
     collection: "products",
   },
 );

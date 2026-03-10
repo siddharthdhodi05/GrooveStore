@@ -1,4 +1,4 @@
-import mongoose, { Collection } from "mongoose";
+import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
@@ -38,22 +38,22 @@ const orderSchema = mongoose.Schema(
     },
     itemsPrice: {
       type: Number,
-      required: [true, "ItemsPrice is required"],
+      required: [true, "Items price is required"],
       default: 0.0,
     },
     taxPrice: {
       type: Number,
-      required: [true, "tax Price is required"],
+      required: [true, "Tax price is required"],
       default: 0.0,
     },
     shippingPrice: {
       type: Number,
-      required: [true, "shipping Price is required"],
+      required: [true, "Shipping price is required"],
       default: 0.0,
     },
     totalPrice: {
       type: Number,
-      required: [true, "Total Price is required"],
+      required: [true, "Total price is required"],
       default: 0.0,
     },
     isPaid: {
